@@ -1,0 +1,135 @@
+.header {
+    color: #fff;
+    padding-top: 85px;
+    background-color: #333;
+    // .header__wraper
+
+    &__wraper {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: #333;
+        z-index: 10;
+    }
+
+    // .header__top
+
+    &__top {
+        padding: 10px 0;
+        align-items: center;
+
+    }
+
+    // .header__logo
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    // .header__phone
+
+    &__phone {
+        position: relative;
+        color: #fff;
+        font-weight: 700;
+        font-size: 18px;
+
+
+        &::before {
+            position: absolute;
+            font-family: 'icomoon' !important;
+            content: "\e958";
+            left: -30px;
+            font-size: 25px;
+            color: $red;
+        }
+    }
+
+    // .header__social-icons
+
+
+    &__btn {
+
+        padding: 0 24px;
+    }
+
+    // .header__list
+
+    &__list {
+
+        li {
+            display: inline-block;
+            padding: 20px 20px;
+        }
+
+
+        li+li {
+            margin-left: 20px;
+        }
+    }
+
+    &__address {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            font-family: 'icomoon' !important;
+            content: "\e947";
+            left: -30px;
+            top: 8px;
+            font-size: 25px;
+            color: $red;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    &__box {
+        align-items: center;
+
+    }
+}
+
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 43px;
+}
+
+
+
+.btn {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    background: $red;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out,
+        color 0.2s ease-in-out,
+        border-color 0.2s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0px 10px 30px -10px $red !important;
+    border-width: 2px;
+    line-height: 32px;
+
+
+}
+
+
+
+.social {
+
+    // .social__list
+
+    &__list {
+        li {
+            margin-left: 20px;
+        }
+    }
+}
